@@ -28,3 +28,9 @@ hasRedKey = 0;
 /// @DnDHash : 5AB45808
 /// @DnDArgument : "speed" "0"
 image_speed = 0;
+
+/// @DnDAction : YoYo Games.Movement.Set_Gravity_Force
+/// @DnDVersion : 1
+/// @DnDHash : 7AD3587C
+/// @DnDArgument : "force" "0.7"
+gravity = 0.7;
