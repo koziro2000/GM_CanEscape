@@ -36,7 +36,6 @@ switch(myState)
 			
 		if (move_dir != 0) {
 			x += move_speed * move_dir;
-			image_speed = move_speed / 3;
 			image_xscale = move_dir;
 		}
 
@@ -59,8 +58,26 @@ switch(myState)
 	{		
 					
 		if (sprite_index != spr_player_attack) 
-		{
+		{			
 			sprite_index = spr_player_attack;
+		}
+		
+		//summon hit box
+		if (image_index >= 1 and image_index <= 2)
+		{					
+			with(instance_create_depth(x, y, -1000,obj_player_attack_hitbox))
+			{
+				image_xscale = other.image_xscale;
+				with(instance_place(x, y, obj_enemy_root))
+				{
+					if (isHit == 0)
+					{
+						isHit = 1;
+						hsp = sign(x - other.x) * 1.5;
+						image_xscale = sign(hsp);						
+					}			
+				}
+			}
 		}
 		
 		break;
