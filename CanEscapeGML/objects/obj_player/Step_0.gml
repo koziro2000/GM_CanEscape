@@ -72,7 +72,9 @@ switch(myState)
 				{
 					if (isHit == 0)
 					{
+						image_speed = 0;
 						isHit = 1;
+						myState = enemyState.hit;
 						hsp = sign(x - other.x) * 1.5;
 						image_xscale = sign(hsp);						
 					}			
