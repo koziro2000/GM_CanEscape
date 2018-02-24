@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1842593c-6790-439c-bd40-7635a33cead3",
+            "Value": {
+                "id": "17654fab-fbac-48b8-9ec8-b1220a535ef0",
+                "resourcePath": "sprites\\spr_enemy_attack\\spr_enemy_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b00da5b-9b15-4684-8553-955c218677c6",
             "Value": {
                 "id": "aa288df6-3d92-4aef-b5f1-f08fc3ac386d",
@@ -92,6 +100,14 @@
                 "id": "cebf40c6-9a43-4334-ac7b-a8f5c9197514",
                 "resourcePath": "views\\4e2f9856-9422-4469-9201-98afd8d0aea4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5327031c-e5bc-4cde-b017-2f78baed0e01",
+            "Value": {
+                "id": "22e9f236-4f1b-47c6-9ee9-94ff463bee65",
+                "resourcePath": "objects\\obj_in_game_gui\\obj_in_game_gui.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -167,11 +183,27 @@
             }
         },
         {
+            "Key": "9baa7193-5f71-454e-9998-7c8999d77f1e",
+            "Value": {
+                "id": "f5ce5613-11bc-4ec8-83f3-d81afb207e47",
+                "resourcePath": "objects\\obj_enemy_attack_hitbox\\obj_enemy_attack_hitbox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9ea19f49-53b4-4ba3-8d9c-d9343cad9161",
             "Value": {
                 "id": "3946f035-eb51-4fec-94ea-1cb5eaaf15ff",
                 "resourcePath": "views\\9ea19f49-53b4-4ba3-8d9c-d9343cad9161.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a4f42f5e-958c-44a1-8aae-1f615a42d9a4",
+            "Value": {
+                "id": "fb0d6029-33e3-4ccd-b925-b4a8932484f1",
+                "resourcePath": "objects\\obj_enemy_spawnner\\obj_enemy_spawnner.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -211,6 +243,14 @@
             "Value": {
                 "id": "78f33381-df50-4d5e-8576-c660bea52979",
                 "resourcePath": "sprites\\spr_player_attack\\spr_player_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bc322b6c-6352-4862-a25a-38086bbdee69",
+            "Value": {
+                "id": "669cdf96-4554-4932-8b07-98da7a78a757",
+                "resourcePath": "sprites\\spr_enemy_attack_hitbox\\spr_enemy_attack_hitbox.yy",
                 "resourceType": "GMSprite"
             }
         },

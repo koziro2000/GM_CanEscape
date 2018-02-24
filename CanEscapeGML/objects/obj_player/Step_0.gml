@@ -11,6 +11,7 @@ switch(myState)
 		if (sprite_index != spr_player_idle)
 		{
 			sprite_index = spr_player_idle;
+			image_speed = 1;
 		}
 		
 		if (key_attack != 0)
@@ -33,9 +34,9 @@ switch(myState)
 	{
 		if (sprite_index != spr_player_walk) 
 			sprite_index = spr_player_walk;
-			
+		hsp = move_speed;	
 		if (move_dir != 0) {
-			x += move_speed * move_dir;
+			x += hsp * move_dir;
 			image_xscale = move_dir;
 		}
 
@@ -87,9 +88,20 @@ switch(myState)
 	
 	case playerState.hit:
 	{
-		if (sprite_index != spr_player_hit) 
+		
+		if (isHit != 0)
 		{
-			sprite_index = spr_player_hit;
+			if (sprite_index != spr_player_hit) 
+			{
+				sprite_index = spr_player_hit;
+			}			
+			isHit =  lerp(isHit, 0, 0.5);
+			image_index = 1;
+			x += hsp;
+		}
+		else
+		{
+			myState = playerState.idle;
 		}
 		break;
 	}

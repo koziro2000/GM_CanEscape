@@ -12,6 +12,9 @@ hsp_max = 3;
 vsp_max = 5;
 jbuff = 0;
 isHit = 0;
+attack_sig = 0;
+detect_player_range = 60;
+detect_attack_range = 3;
 
 image_index = 0;
 image_speed = 1;
@@ -20,7 +23,8 @@ enum enemyState
 {
 	idle,
 	walk,
-	hit
+	hit,
+	attack
 }
 
 myState = enemyState.idle;
